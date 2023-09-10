@@ -13,6 +13,7 @@ public class Config {
     public static final String API_KEY = System.getenv("API_KEY");
 
     public static class Log {
-        public static final Logger LOGGER  = Logger.getLogger(Config.class.getName());
+        private Log(){}
+        public static final Logger LOGGER  = Logger.getLogger(Log.class.getName());
     }
 }
